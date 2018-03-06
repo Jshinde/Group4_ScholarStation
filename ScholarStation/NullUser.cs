@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ScholarStation
 {
-    class NullUser
+    class NullUser : User
     {
+        public NullUser()
+        {
+        }
+
+        public NullUser(string newName, int newId, UserType newType) : base(newName, newId, newType)
+        {
+        }
     }
 }
