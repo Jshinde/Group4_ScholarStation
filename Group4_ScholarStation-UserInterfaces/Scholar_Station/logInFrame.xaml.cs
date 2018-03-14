@@ -21,27 +21,36 @@ namespace Scholar_Station
 
         private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
-            if (Regex.IsMatch(emailBox.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
-                    {
-                        user = new UserFactory();
-                        User newUser = user.CreateUser("name", 1, UserType.Standard, emailBox.Text);
+            inputValidationCheck();
+        }
 
-                        if (emailBox.Text != null)
+      public void inputValidationCheck()
+        {
+            if (Regex.IsMatch(emailBox.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+           {
+                user = new UserFactory();
+                User newUser = user.CreateUser("name", 1, UserType.Standard, emailBox.Text);
+
+                     if (emailBox.Text != null)
+                     {
+                        if (userSelectBox.SelectedIndex == 1)
                         {
-                            if (userSelectBox.SelectedIndex == 1)
-                            {
-                                this.NavigationService.Navigate(new joinSessionFrame(newUser));
-                            }
-                            else
-                            {
-                                this.NavigationService.Navigate(new tutorPage(newUser));
-                            }
+                           this.NavigationService.Navigate(new joinSessionFrame(newUser));
+                        }
+                        else if (userSelectBox.SelectedIndex == 0)
+                        {
+                           this.NavigationService.Navigate(new tutorPage(newUser));
+                        }
+                        else
+                        {
+                           MessageBox.Show("You must select a user type!");
                         }
                      }
+            }
             else
-                {
-                    MessageBox.Show("You Must Enter a vaild Email!");
-                }
+            {
+               MessageBox.Show("You Must Enter a vaild Email!");
             }
         }
     }
+}
