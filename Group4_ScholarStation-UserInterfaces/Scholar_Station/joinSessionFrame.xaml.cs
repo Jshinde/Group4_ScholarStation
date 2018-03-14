@@ -122,7 +122,7 @@ namespace Scholar_Station
                 while (avalList_dr.Read())
                 {
                     sessionIdList.Add(avalList_dr.GetValue(8).ToString());
-                    SessionTimeBox.Items.Add(avalList_dr.GetValue(2).ToString());
+                    SessionTimeBox.Items.Add(avalList_dr.GetValue(2).ToString().Substring(0,10));
                 }
             }
             dbConnection.closeConnection();
