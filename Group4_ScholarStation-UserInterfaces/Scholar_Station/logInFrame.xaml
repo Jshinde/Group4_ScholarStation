@@ -13,7 +13,7 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="347*"/>
         </Grid.RowDefinitions>
-        <ComboBox x:Name="userSelectBox" HorizontalAlignment="Left" Margin="200,131,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="userSelectBox" HorizontalAlignment="Left" Margin="189,131,0,0" Grid.Row="1" VerticalAlignment="Top" Width="144">
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
@@ -23,13 +23,13 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label x:Name="label" Content="Select User" HorizontalAlignment="Left" Margin="200,105,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
+        <Label x:Name="label" Content="Select User" HorizontalAlignment="Left" Margin="187,105,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
         <Label x:Name="label1" Content="Welcome To Scholar Station" HorizontalAlignment="Left" Margin="104,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="360" FontSize="24" FontWeight="Bold"/>
-        <TextBox x:Name="emailBox" HorizontalAlignment="Left" Height="23" Margin="200,178,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" >
+        <TextBox x:Name="emailBox" HorizontalAlignment="Left" Height="23" AcceptsReturn="False" Margin="189,178,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" >
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <Label x:Name="label_Copy" Content="Enter Email" HorizontalAlignment="Left" Margin="200,153,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Enter Email" HorizontalAlignment="Left" Margin="187,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
     </Grid>
 </Page>

@@ -118,7 +118,7 @@ namespace Scholar_Station
                 }
                
             }
-
+            dbConnection.closeConnection();
         }
 
         //Fill the time box with dates of the currentmonth
@@ -134,11 +134,13 @@ namespace Scholar_Station
                 sessionTimeList.Add(_time.ToShortTimeString());
                 timeBox.Items.Add(_time.ToShortTimeString());
             }
+            dbConnection.closeConnection();
         }
 
         //Fill session length box with 15 min increments
         public void fillSessionLengthBox()
         {
+            connectToDatabase();
             sessionLengthList = new List<float>();
             float lengthOfSession = 0;
             for (int i = 0; i <= 3; i++)
@@ -147,11 +149,13 @@ namespace Scholar_Station
                 sessionLengthList.Add(lengthOfSession);
                 sessionLengthBox.Items.Add(lengthOfSession);
             }
+            dbConnection.closeConnection();
         }
 
         //Fill cancled session comboBox with avaliable sessions from the database
         public void sessionIds()
         {
+            connectToDatabase();
             sessionIdList = new List<string>();
             String myCommand = "select * from t_session where ses_tutor_email = '" + user.Email + "'";
             SqlDataReader currentSessionList = dbConnection.DataReader(myCommand);
@@ -161,14 +165,21 @@ namespace Scholar_Station
                 sessionIdList.Add(currentSessionList.GetValue(8).ToString());
                 sessionIdBox.Items.Add(currentSessionList.GetValue(8).ToString());
             }
+            dbConnection.closeConnection();
         }
 
         public void cancelSession()
         {
+            connectToDatabase();
             if(sessionIdBox.SelectedIndex != -1)
-            {
-                String deleteSession = "Delete From t_session where sessionId = '" + sessionIdList[sessionIdBox.SelectedIndex].ToString() + "'";
-                dbConnection.ExecuteQueries(deleteSession);
+            {   
+                String deleteSessionFromSessionTable = "Delete From t_session where sessionId = '" + sessionIdList[sessionIdBox.SelectedIndex].ToString() + "'";
+                dbConnection.ExecuteQueries(deleteSessionFromSessionTable);
+
+                String deleteSessionFromTutorTable = "Delete From tutors where fk_sessionId = '" + sessionIdList[sessionIdBox.SelectedIndex].ToString() + "'";
+                dbConnection.ExecuteQueries(deleteSessionFromSessionTable);
+                dbConnection.ExecuteQueries(deleteSessionFromTutorTable);
+
                 MessageBox.Show("Session Cancled");
                 sessionIdBox.Items.RemoveAt(sessionIdBox.SelectedIndex);
 
@@ -177,15 +188,19 @@ namespace Scholar_Station
             {
                 MessageBox.Show("You Must Select A Session Id!");
             }
-            
+            dbConnection.closeConnection();
         }
 
+        //Add sessions to database
         public void addToSessionsAndTutors()
         {
+            connectToDatabase();
             if (sessionLengthBox.SelectedIndex != -1)
             {
                 Random ran = new Random();
                 int numberOfAllowedSessions = 10000;
+                int sessID = isSessionIDUnique(ran.Next(numberOfAllowedSessions));
+
                 string insertIntoSessions = "INSERT into t_session (ses_tutor_email , ses_student_email, ses_date, ses_start_time, ses_duration, ses_creator, ses_complete, ses_course, sessionId ) " +
                                    "VALUES ('" + user.Email
                                     + "', '" + null
@@ -195,14 +210,15 @@ namespace Scholar_Station
                                     + "', '" + user.Email
                                     + "', '" + 0
                                     + "', '" + classList[classesBox.SelectedIndex].ToString()
-                                    + "', '" + ran.Next(numberOfAllowedSessions) + "')";
+                                    + "', '" + sessID + "')";
 
                 dbConnection.ExecuteQueries(insertIntoSessions);
 
-                string insertIntotutors = "INSERT into tutors (tutor_email , tutor_cr_num, tutor_is_endorsed ) " +
+                string insertIntotutors = "INSERT into tutors (tutor_email , tutor_cr_num, tutor_is_endorsed, fk_sessionID ) " +
                                    "VALUES ('" + user.Email
                                     + "', '" + classList[classesBox.SelectedIndex].ToString()
-                                    + "', '" + 0 + "')";
+                                    + "', '" + 0 
+                                    + "', '" + sessID + "')";
 
                 dbConnection.ExecuteQueries(insertIntotutors);
                 
@@ -213,11 +229,13 @@ namespace Scholar_Station
             //Clear and refresh the session idBox to refill with new session id
             sessionIdBox.Items.Clear();
             sessionIds();
+            dbConnection.closeConnection();
         }
 
 
         public void viewTutorsCurrentSessions()
         {
+            connectToDatabase();
             textBox.Clear();
             String myCommand = "select * from t_session where ses_tutor_email = '" + user.Email + "'";
             SqlDataReader currentSessionList = dbConnection.DataReader(myCommand);
@@ -233,6 +251,24 @@ namespace Scholar_Station
                                               + "Student Email: " + currentSessionList.GetValue(1).ToString() + "\n"
                                               + "\n";
             }
+            dbConnection.closeConnection();
+        }
+
+        public int isSessionIDUnique(int newIdNumber)
+        {
+            String myCommand = "select sessionId from t_session";
+            SqlDataReader sessionIdList = dbConnection.DataReader(myCommand);
+            while (sessionIdList.Read())
+            {
+                if ((int)sessionIdList.GetValue(0) == newIdNumber)
+                {
+                    newIdNumber = isSessionIDUnique(new Random().Next(newIdNumber));
+                  
+                }
+            }
+            MessageBox.Show("Session ID: " + newIdNumber.ToString());
+            dbConnection.closeConnection();
+            return newIdNumber;
         }
 
         
