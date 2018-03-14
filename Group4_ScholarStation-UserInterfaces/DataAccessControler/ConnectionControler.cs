@@ -19,7 +19,7 @@ namespace DataAccessControler
         {
             myConnection = new SqlConnection("user id='';" +
                                              "password='';" +
-                                             "server=DESKTOP-C0VCBM7\\HOMESERVER;" +
+                                             "server=localhost;" +
                                              "database= Scholar_Station; " +
                                              "Trusted_Connection=true;"
                                              );
