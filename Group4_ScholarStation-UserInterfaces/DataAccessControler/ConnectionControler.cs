@@ -13,7 +13,6 @@ namespace DataAccessControler
     public class ConnectionControler : IConnection
     {
         private SqlConnection myConnection;
-        private SqlDataReader dr;     
 
         public void openConnection()
         {

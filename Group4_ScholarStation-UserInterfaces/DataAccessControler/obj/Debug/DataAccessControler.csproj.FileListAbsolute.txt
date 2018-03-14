@@ -14,3 +14,9 @@ C:\Users\Kenneth Dale\Desktop\CEN3032\Group4_ScholarStation\Group4_ScholarStatio
 C:\Users\Kenneth Dale\Desktop\CEN3032\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.csproj.CoreCompileInputs.cache
 C:\Users\Kenneth Dale\Desktop\CEN3032\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.dll
 C:\Users\Kenneth Dale\Desktop\CEN3032\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.pdb
+C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\bin\Debug\DataAccessControler.dll
+C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\bin\Debug\DataAccessControler.pdb
+C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.csprojResolveAssemblyReference.cache
+C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.csproj.CoreCompileInputs.cache
+C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.dll
+C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.pdb
