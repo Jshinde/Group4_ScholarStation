@@ -20,3 +20,9 @@ C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_Scholar
 C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.csproj.CoreCompileInputs.cache
 C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.dll
 C:\Users\Cole Peaden\Desktop\ScholarStation\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.pdb
+C:\Users\Cole Peaden\Desktop\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.dll
+C:\Users\Cole Peaden\Desktop\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.pdb
+C:\Users\Cole Peaden\Desktop\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.csprojResolveAssemblyReference.cache
+C:\Users\Cole Peaden\Desktop\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.csproj.CoreCompileInputs.cache
+C:\Users\Cole Peaden\Desktop\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.dll
+C:\Users\Cole Peaden\Desktop\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.pdb

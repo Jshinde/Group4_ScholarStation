@@ -245,7 +245,7 @@ namespace Scholar_Station
                                               + "Date: " + currentSessionList.GetValue(2).ToString() + "\n"
                                               + "Time: " + currentSessionList.GetValue(3).ToString() + "\n"
                                               + "Length: " + currentSessionList.GetValue(4).ToString() + "\n"
-                                              + "Creator: " + currentSessionList.GetValue(5).ToString() + "\n"
+                                              + "Tutor: " + currentSessionList.GetValue(5).ToString() + "\n"
                                               + "Complete: " + currentSessionList.GetValue(6).ToString() + "\n"
                                               + "Course: " + currentSessionList.GetValue(7).ToString() + "\n"
                                               + "Student Email: " + currentSessionList.GetValue(1).ToString() + "\n"
