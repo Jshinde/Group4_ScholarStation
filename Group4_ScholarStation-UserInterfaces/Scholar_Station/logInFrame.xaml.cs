@@ -15,8 +15,8 @@ namespace Scholar_Station
         public logInFrame()
         {
             InitializeComponent();
-            userSelectBox.Items.Add("Tutor");
-            userSelectBox.Items.Add("Student");
+            //userSelectBox.Items.Add("Tutor");
+            //userSelectBox.Items.Add("Student");
         }
 
         private void LogInButton_Click(object sender, RoutedEventArgs e)
@@ -33,7 +33,12 @@ namespace Scholar_Station
 
                      if (emailBox.Text != null)
                      {
-                        if (userSelectBox.SelectedIndex == 1)
+
+
+					//TODO:  navigate to new screen.  send through new user.
+					this.NavigationService.Navigate(new userHome(newUser));
+
+					/*if (userSelectBox.SelectedIndex == 1)
                         {
                            this.NavigationService.Navigate(new joinSessionFrame(newUser));
                         }
@@ -44,7 +49,7 @@ namespace Scholar_Station
                         else
                         {
                            MessageBox.Show("You must select a user type!");
-                        }
+                        }*/
                      }
             }
             else

@@ -58,6 +58,9 @@
     <Compile Include="tutorPage.xaml.cs">
       <DependentUpon>tutorPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="userHome.xaml.cs">
+      <DependentUpon>userHome.xaml</DependentUpon>
+    </Compile>
     <Page Include="logInFrame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -82,6 +85,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="tutorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="userHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
