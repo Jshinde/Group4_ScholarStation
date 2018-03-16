@@ -4,5 +4,5 @@ Server/*
 .cache
 .exe
 .exe.config
-.vs/*
+Group4_ScholarStation-UserInterfaces/.vs/*
 Debug/*
