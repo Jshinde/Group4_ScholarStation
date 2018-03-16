@@ -7,5 +7,6 @@ Server/*
 *.ide
 *.ide-wal
 *.ide-shm
+*.baml
 Group4_ScholarStation-UserInterfaces/.vs/*
 Debug/*
