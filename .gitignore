@@ -1,0 +1,7 @@
+Server/*
+.dll
+.pdb
+.cache
+.exe
+.exe.config
+Debug/*
