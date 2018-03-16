@@ -13,7 +13,7 @@ namespace DataAccessControler
     public class ConnectionControler : IConnection
     {
         private SqlConnection myConnection;
-        private SqlDataReader dr;     
+        private SqlDataReader dr;
 
         public void openConnection()
         {
@@ -44,7 +44,7 @@ namespace DataAccessControler
             {
                 openConnection();
                 SqlCommand cmd = new SqlCommand(Query_, myConnection);
-                SqlDataReader dr = cmd.ExecuteReader();
+                dr = cmd.ExecuteReader();
                 return dr;
             }
             catch
