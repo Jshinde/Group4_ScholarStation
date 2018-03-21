@@ -9,11 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessControler", "Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScholarStationCL", "ScholarStationCL\ScholarStationCL.csproj", "{49232F00-5D51-4613-8C29-CE2D88205A42}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{493E56A9-184E-4C28-B9C7-2A2BA4683E08}"
-	ProjectSection(SolutionItems) = preProject
-		Simple-Blue-Background.jpg = Simple-Blue-Background.jpg
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

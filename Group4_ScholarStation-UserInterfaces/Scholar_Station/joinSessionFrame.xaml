@@ -39,7 +39,7 @@
         </ComboBox>
         <Label x:Name="timeLabel" Content="Available Sessions" HorizontalAlignment="Left" Margin="269,138,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="29" Width="129"/>
         <Label x:Name="label1" Content="Scholar Station Session Creator" HorizontalAlignment="Left" Margin="90,32,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Height="39" Width="332"/>
-        <Button x:Name="homeButton" Content="Home" HorizontalAlignment="Left" Margin="275,228,0,0" VerticalAlignment="Top" Width="172" Click="homeButton_Click" FontWeight="Bold">
+        <Button x:Name="homeButton" Content="Sign Out" HorizontalAlignment="Left" Margin="275,228,0,0" VerticalAlignment="Top" Width="172" Click="homeButton_Click" FontWeight="Bold">
             <Button.Effect>
                 <DropShadowEffect ShadowDepth="1"/>
             </Button.Effect>

@@ -13,13 +13,13 @@ namespace DataAccessControler
     public class ConnectionControler : IConnection
     {
         private SqlConnection myConnection;
-        private SqlDataReader dr;
+        private SqlDataReader dr;     
 
         public void openConnection()
         {
             myConnection = new SqlConnection("user id='';" +
                                              "password='';" +
-                                             "server=localhost;" +
+                                             "server=DESKTOP-C0VCBM7\\HOMESERVER;" +
                                              "database= Scholar_Station; " +
                                              "Trusted_Connection=true;"
                                              );
@@ -44,7 +44,7 @@ namespace DataAccessControler
             {
                 openConnection();
                 SqlCommand cmd = new SqlCommand(Query_, myConnection);
-                dr = cmd.ExecuteReader();
+                SqlDataReader dr = cmd.ExecuteReader();
                 return dr;
             }
             catch
