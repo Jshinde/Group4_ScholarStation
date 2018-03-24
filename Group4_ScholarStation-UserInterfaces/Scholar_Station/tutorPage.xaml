@@ -54,7 +54,7 @@
                 <DropShadowEffect ShadowDepth="1"/>
             </Button.Effect>
         </Button>
-        <Label x:Name="label_Copy4" Content="Cance Session" HorizontalAlignment="Left" Margin="341,63,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold"/>
+        <Label x:Name="label_Copy4" Content="Cancel Session" HorizontalAlignment="Left" Margin="341,63,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold"/>
         <ComboBox x:Name="sessionIdBox" HorizontalAlignment="Left" Margin="341,89,0,0" VerticalAlignment="Top" Width="128" >
             <ComboBox.Effect>
                 <DropShadowEffect ShadowDepth="1"/>
