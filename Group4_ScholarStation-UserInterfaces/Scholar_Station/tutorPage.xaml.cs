@@ -233,28 +233,28 @@ namespace Scholar_Station
         }
 
 
-        public void viewTutorsCurrentSessions()
-        {
-            connectToDatabase();
-            textBox.Clear();
-            String myCommand = "select * from t_session where ses_tutor_email = '" + user.Email + "'";
-            SqlDataReader currentSessionList = dbConnection.DataReader(myCommand);
-            while (currentSessionList.Read())
-            {
-                    textBox.Text += "Session ID: " + currentSessionList.GetValue(8).ToString() + "\n"
-                                              + "Date: " + currentSessionList.GetValue(2).ToString() + "\n"
-                                              + "Time: " + currentSessionList.GetValue(3).ToString() + "\n"
-                                              + "Length: " + currentSessionList.GetValue(4).ToString() + "\n"
-                                              + "Creator: " + currentSessionList.GetValue(5).ToString() + "\n"
-                                              + "Complete: " + currentSessionList.GetValue(6).ToString() + "\n"
-                                              + "Course: " + currentSessionList.GetValue(7).ToString() + "\n"
-                                              + "Student Email: " + currentSessionList.GetValue(1).ToString() + "\n"
-                                              + "\n";
-            }
-            dbConnection.closeConnection();
-        }
+		public void viewTutorsCurrentSessions()
+		{
+			connectToDatabase();
+			textBox.Clear();
+			String myCommand = "select * from t_session where ses_tutor_email = '" + user.Email + "'";
+			SqlDataReader currentSessionList = dbConnection.DataReader(myCommand);
+			while (currentSessionList.Read())
+			{
+				textBox.Text += "Session ID: " + currentSessionList.GetValue(8).ToString() + "\n"
+										  + "Date: " + currentSessionList.GetValue(2).ToString() + "\n"
+										  + "Time: " + currentSessionList.GetValue(3).ToString() + "\n"
+										  + "Length: " + currentSessionList.GetValue(4).ToString() + "\n"
+										  + "Creator: " + currentSessionList.GetValue(5).ToString() + "\n"
+										  + "Complete: " + currentSessionList.GetValue(6).ToString() + "\n"
+										  + "Course: " + currentSessionList.GetValue(7).ToString() + "\n"
+										  + "Student Email: " + currentSessionList.GetValue(1).ToString() + "\n"
+										  + "\n";
+			}
+			dbConnection.closeConnection();
+		}
 
-        public int isSessionIDUnique(int newIdNumber)
+		public int isSessionIDUnique(int newIdNumber)
         {
             String myCommand = "select sessionId from t_session";
             SqlDataReader sessionIdList = dbConnection.DataReader(myCommand);

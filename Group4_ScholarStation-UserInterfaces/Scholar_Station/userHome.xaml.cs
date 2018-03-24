@@ -21,7 +21,6 @@ namespace Scholar_Station
 	/// </summary>
 	/// 
 
-
 	public partial class userHome : Page
 	{
 		private User user;
@@ -30,7 +29,7 @@ namespace Scholar_Station
 		{
 			this.user = user;
 			InitializeComponent();
-			welcomeMsg.Content = ("Welcome, " + user.Email + "!").ToString();
+			welcomeMsg.Content = "Welcome, " + user.Email + "!";
 		}
 
 		private void createNew_Click(object sender, RoutedEventArgs e)
@@ -42,5 +41,6 @@ namespace Scholar_Station
 		{
 			this.NavigationService.Navigate(new joinSessionFrame(user));
 		}
+
 	}
 }

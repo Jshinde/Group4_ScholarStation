@@ -9,10 +9,10 @@
       Title="userHomeFrame" Width="525" Height="350">
 
     <Grid>
-        <Label x:Name="tutorMsg" Content="Sessions you're tutoring:" HorizontalAlignment="Left" Margin="50,117,0,0" VerticalAlignment="Top" Width="150" FontWeight="Bold"/>
-        <Label x:Name="attendeeMsg" Content="Sessions you're attending:" HorizontalAlignment="Left" Margin="50,232,0,0" VerticalAlignment="Top" Width="164" FontWeight="Bold"/>
-        <Button Content="Create Session" HorizontalAlignment="Left" Margin="114,178,0,0" VerticalAlignment="Top" Width="100" Click="createNew_Click"/>
-        <Button Content="Join Session" HorizontalAlignment="Left" Margin="114,289,0,0" VerticalAlignment="Top" Width="100" Click="joinExisting_Click"/>
+        <Label x:Name="tutorMsg" Content="Sessions you're tutoring:" HorizontalAlignment="Left" Margin="50,87,0,0" VerticalAlignment="Top" Width="150" FontWeight="Bold"/>
+        <Label x:Name="attendeeMsg" Content="Sessions you're attending:" HorizontalAlignment="Left" Margin="50,190,0,0" VerticalAlignment="Top" Width="164" FontWeight="Bold"/>
+        <Button Content="Create Session" HorizontalAlignment="Left" Margin="81,145,0,0" VerticalAlignment="Top" Width="100" Click="createNew_Click"/>
+        <Button Content="Join Session" HorizontalAlignment="Left" Margin="81,248,0,0" VerticalAlignment="Top" Width="100" Click="joinExisting_Click"/>
         <Label x:Name="welcomeMsg" HorizontalAlignment="Right" Margin="0,33,16,0" VerticalAlignment="Top" Width="428" Height="41" FontSize="24" FontWeight="Bold"/>
     </Grid>
 </Page>
