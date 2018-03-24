@@ -170,7 +170,7 @@ namespace Scholar_Station
                 dbConnection.ExecuteQueries(deleteSessionFromSessionTable);
                 dbConnection.ExecuteQueries(deleteSessionFromTutorTable);
 
-                MessageBox.Show("Session Cancled");
+                MessageBox.Show("Session Canceled");
                 sessionIdBox.Items.RemoveAt(sessionIdBox.SelectedIndex);
 
             }
