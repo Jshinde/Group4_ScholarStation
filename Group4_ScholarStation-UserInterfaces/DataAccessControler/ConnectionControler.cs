@@ -21,9 +21,18 @@ namespace DataAccessControler
                 this.myConnection = new SqlConnection(connectionString);
         }
 
-        public void closeConnection()
+        public bool closeConnection()
         {
             myConnection.Close();
+            ConnectionState state = myConnection.State;
+            if (state == ConnectionState.Closed)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public SqlDataReader DataReader(String Query_)
@@ -37,7 +46,7 @@ namespace DataAccessControler
             }
             catch
             {
-                MessageBox.Show("Data!");
+                MessageBox.Show("Data Read Error!");
             }
             return dr;
         }
@@ -53,7 +62,7 @@ namespace DataAccessControler
             }
             catch
             {
-                MessageBox.Show("Error!");
+                MessageBox.Show("Data Write Error!");
             }
         }
     }

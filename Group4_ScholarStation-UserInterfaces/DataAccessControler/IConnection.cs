@@ -6,6 +6,6 @@ namespace DataAccessControler
 {
     public interface IConnection
     {
-        void closeConnection();
+        bool closeConnection();
     }
 }

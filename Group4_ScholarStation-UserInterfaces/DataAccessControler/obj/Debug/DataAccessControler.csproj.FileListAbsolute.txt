@@ -11,4 +11,3 @@ C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\DataA
 C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\DataAccessControler\bin\Debug\DataAccessControler.pdb
 C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.dll
 C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.pdb
-C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.csprojResolveAssemblyReference.cache
