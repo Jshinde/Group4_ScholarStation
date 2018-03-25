@@ -12,7 +12,7 @@ namespace DataControlerUnitTest
         {
             //Arange
             IConnection da = new ConnectionControler();
-            
+            da.openConnection();
             //Act
             bool disconnected = da.closeConnection();
 
