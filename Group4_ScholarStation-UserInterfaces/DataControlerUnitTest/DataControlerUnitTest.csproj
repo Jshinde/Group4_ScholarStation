@@ -81,6 +81,7 @@
     <Compile Include="DBConnectionClosedTEST.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OpenConnectionTest.cs" />
+    <Compile Include="DataReaderTEST.cs" />
     <Compile Include="UpdateDB_TEST.cs" />
   </ItemGroup>
   <ItemGroup>
