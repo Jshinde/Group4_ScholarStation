@@ -1,0 +1,18 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   Group4_ScholarStation-UserInterfaces/.vs/ScholarStation/v15/Server/sqlite3/storage.ide
+#	modified:   Group4_ScholarStation-UserInterfaces/ScholarStationCL/obj/Debug/ScholarStationCL.csproj.FileListAbsolute.txt
+#	modified:   Group4_ScholarStation-UserInterfaces/Scholar_Station/obj/Debug/joinSessionFrame.g.cs
+#	modified:   Group4_ScholarStation-UserInterfaces/Scholar_Station/obj/Debug/joinSessionFrame.g.i.cs
+#
+# Untracked files:
+#	Group4_ScholarStation-UserInterfaces/DataAccessControler/obj/Debug/DataAccessControler.csproj.FileListAbsolute.txt
+#	Group4_ScholarStation-UserInterfaces/Scholar_Station/joinSessionFrame.xaml
+#	Group4_ScholarStation-UserInterfaces/Scholar_Station/obj/Debug/Scholar_Station_MarkupCompile.lref
+#
+
