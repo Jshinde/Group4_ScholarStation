@@ -21,6 +21,22 @@ namespace DataAccessControler
                 this.myConnection = new SqlConnection(connectionString);
         }
 
+        public bool openConnection()
+        {
+            try
+            {
+                myConnection = new SqlConnection(connectionString);
+                myConnection.Open();
+                return true;
+            }
+            catch
+            {
+                MessageBox.Show("Error Opening Connection!");
+                return false;
+            }
+            
+        }
+
         public bool closeConnection()
         {
             myConnection.Close();
@@ -31,6 +47,7 @@ namespace DataAccessControler
             }
             else
             {
+                MessageBox.Show("Error Closing Connection!");
                 return false;
             }
         }
@@ -39,7 +56,7 @@ namespace DataAccessControler
         {
             try
             {
-                myConnection.Open();
+                openConnection();
                 SqlCommand cmd = new SqlCommand(Query_, myConnection);
                 SqlDataReader dr = cmd.ExecuteReader();
                 return dr;
@@ -55,7 +72,7 @@ namespace DataAccessControler
         {
             try
             {
-                myConnection.Open();
+                openConnection();
                 SqlCommand cmd = new SqlCommand(Query_, myConnection);
                 cmd.ExecuteNonQuery();
                 closeConnection();

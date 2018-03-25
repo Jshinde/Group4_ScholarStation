@@ -7,5 +7,7 @@ namespace DataAccessControler
     public interface IConnection
     {
         bool closeConnection();
+
+        bool openConnection();
     }
 }
