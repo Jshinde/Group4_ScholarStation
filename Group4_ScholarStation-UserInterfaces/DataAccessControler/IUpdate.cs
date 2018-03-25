@@ -8,6 +8,6 @@ namespace DataAccessControler
 {
     public interface IUpdate
     {
-        void ExecuteQueries(string Query);
+        bool ExecuteQueries(string Query);
     }
 }

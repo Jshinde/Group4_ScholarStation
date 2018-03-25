@@ -20,3 +20,8 @@ C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\G
 C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.dll
 C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.pdb
 >>>>>>> c59c16e6e62a893b5fa991802027903de0376c55
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\bin\Debug\DataAccessControler.dll
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\bin\Debug\DataAccessControler.pdb
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.csprojResolveAssemblyReference.cache
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.dll
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.pdb

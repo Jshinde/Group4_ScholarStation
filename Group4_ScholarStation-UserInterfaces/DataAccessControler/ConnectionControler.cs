@@ -47,11 +47,11 @@ namespace DataAccessControler
             catch
             {
                 MessageBox.Show("Data Read Error!");
+                return dr = null;
             }
-            return dr;
         }
 
-        public void ExecuteQueries(string Query_)
+        public bool ExecuteQueries(string Query_)
         {
             try
             {
@@ -59,10 +59,12 @@ namespace DataAccessControler
                 SqlCommand cmd = new SqlCommand(Query_, myConnection);
                 cmd.ExecuteNonQuery();
                 closeConnection();
+                return true;
             }
             catch
             {
                 MessageBox.Show("Data Write Error!");
+                return false;
             }
         }
     }

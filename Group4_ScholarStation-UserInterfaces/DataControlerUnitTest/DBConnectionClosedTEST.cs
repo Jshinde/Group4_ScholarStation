@@ -8,7 +8,7 @@ namespace DataControlerUnitTest
     public class DBConnectionClosedTEST
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ConnectionClosedTEST()
         {
             //Arange
             IConnection da = new ConnectionControler();

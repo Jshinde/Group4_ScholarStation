@@ -17,3 +17,7 @@ C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\G
 C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.csproj.CoreCompileInputs.cache
 C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.dll
 C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.pdb
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.dll
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.pdb
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.dll
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.pdb
