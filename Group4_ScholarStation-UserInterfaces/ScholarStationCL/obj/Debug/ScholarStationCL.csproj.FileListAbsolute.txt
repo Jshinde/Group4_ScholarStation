@@ -12,3 +12,8 @@ C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Schol
 C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.pdb
 C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.dll
 C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.pdb
+C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.dll
+C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.pdb
+C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.csproj.CoreCompileInputs.cache
+C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.dll
+C:\Users\Joshua\Documents\School\Software Engineering II\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.pdb
