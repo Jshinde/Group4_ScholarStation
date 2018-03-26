@@ -10,55 +10,79 @@ using System.Windows;
 
 namespace DataAccessControler
 {
-    public class ConnectionControler : IConnection
+    public class ConnectionControler : IConnection, IUpdate, IRead
     {
+        private string connectionString = "user id='';" + "password='';" + "server=DESKTOP-C0VCBM7\\HOMESERVER;" + "database= Scholar_Station; " + "Trusted_Connection=true;";
         private SqlConnection myConnection;
         private SqlDataReader dr;
 
-        public void openConnection()
+        public ConnectionControler()
         {
-            myConnection = new SqlConnection("user id='';" +
-                                             "password='';" +
-                                             "server=localhost;" +
-                                             "database= Scholar_Station; " +
-                                             "Trusted_Connection=true;"
-                                             );
+                this.myConnection = new SqlConnection(connectionString);
+        }
+
+        public bool openConnection()
+        {
             try
             {
+                myConnection = new SqlConnection(connectionString);
                 myConnection.Open();
+                return true;
             }
-            catch (Exception e)
+            catch
             {
-                MessageBox.Show("Connection Error!");
+                MessageBox.Show("Error Opening Connection!");
+                return false;
+            }
+            
+        }
+
+        public bool closeConnection()
+        {
+            myConnection.Close();
+            ConnectionState state = myConnection.State;
+            if (state == ConnectionState.Closed)
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Error Closing Connection!");
+                return false;
             }
         }
 
-        public void closeConnection()
-        {
-            myConnection.Close();
-        }
-      
         public SqlDataReader DataReader(String Query_)
         {
             try
             {
                 openConnection();
                 SqlCommand cmd = new SqlCommand(Query_, myConnection);
-                dr = cmd.ExecuteReader();
+                SqlDataReader dr = cmd.ExecuteReader();
                 return dr;
             }
             catch
             {
-                MessageBox.Show("Data Read Error!"); 
+                //MessageBox.Show("Data Read Error!");
+                return dr = null;
             }
-            return dr;
         }
 
-        public void ExecuteQueries(string Query_)
+        public bool ExecuteQueries(string Query_)
         {
-            openConnection();
-            SqlCommand cmd = new SqlCommand(Query_, myConnection);
-            cmd.ExecuteNonQuery();
+            try
+            {
+                openConnection();
+                SqlCommand cmd = new SqlCommand(Query_, myConnection);
+                cmd.ExecuteNonQuery();
+                closeConnection();
+                return true;
+            }
+            catch
+            {
+                //MessageBox.Show("Data Write Error!");
+                return false;
+            }
         }
     }
 }

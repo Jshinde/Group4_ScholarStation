@@ -6,12 +6,8 @@ namespace DataAccessControler
 {
     public interface IConnection
     {
-        void openConnection();
+        bool closeConnection();
 
-        void closeConnection();
-
-        void ExecuteQueries(string Query);
-
-        SqlDataReader DataReader(string Query_m);
+        bool openConnection();
     }
 }

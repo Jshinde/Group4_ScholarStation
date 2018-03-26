@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scholar_Station", "Scholar_Station\Scholar_Station.csproj", "{BD5FF951-C8E6-4658-9BBA-86226C4772D8}"
 EndProject
@@ -9,10 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessControler", "Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScholarStationCL", "ScholarStationCL\ScholarStationCL.csproj", "{49232F00-5D51-4613-8C29-CE2D88205A42}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{493E56A9-184E-4C28-B9C7-2A2BA4683E08}"
-	ProjectSection(SolutionItems) = preProject
-		Simple-Blue-Background.jpg = Simple-Blue-Background.jpg
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataControlerUnitTest", "DataControlerUnitTest\DataControlerUnitTest.csproj", "{AF53BBBC-83D3-46E7-BA13-A291EFD3B561}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserFactoryTests", "UserFactoryTests\UserFactoryTests.csproj", "{AEB11A70-0459-4F2A-B1EA-2008328B2CE4}"
 EndProject
@@ -34,6 +31,10 @@ Global
 		{49232F00-5D51-4613-8C29-CE2D88205A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49232F00-5D51-4613-8C29-CE2D88205A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49232F00-5D51-4613-8C29-CE2D88205A42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF53BBBC-83D3-46E7-BA13-A291EFD3B561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF53BBBC-83D3-46E7-BA13-A291EFD3B561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF53BBBC-83D3-46E7-BA13-A291EFD3B561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF53BBBC-83D3-46E7-BA13-A291EFD3B561}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AEB11A70-0459-4F2A-B1EA-2008328B2CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AEB11A70-0459-4F2A-B1EA-2008328B2CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEB11A70-0459-4F2A-B1EA-2008328B2CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU

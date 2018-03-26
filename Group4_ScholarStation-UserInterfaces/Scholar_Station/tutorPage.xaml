@@ -49,7 +49,7 @@
         <Label x:Name="label_Copy1" Content="Select Session Date" HorizontalAlignment="Left" Margin="342,15,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
         <Label x:Name="label_Copy2" Content="Select Session Time" HorizontalAlignment="Left" Margin="50,63,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold"/>
         <Label x:Name="label_Copy3" Content="Select Session Length" HorizontalAlignment="Left" Margin="199,63,0,0" VerticalAlignment="Top" Width="138" FontWeight="Bold"/>
-        <Button x:Name="homeButton" Content="Home" HorizontalAlignment="Left" Margin="341,300,0,0" VerticalAlignment="Top" Width="127" Click="homeButton_Click" FontWeight="Bold">
+        <Button x:Name="homeButton" Content="Sign Out" HorizontalAlignment="Left" Margin="341,300,0,0" VerticalAlignment="Top" Width="127" Click="homeButton_Click" FontWeight="Bold">
             <Button.Effect>
                 <DropShadowEffect ShadowDepth="1"/>
             </Button.Effect>
